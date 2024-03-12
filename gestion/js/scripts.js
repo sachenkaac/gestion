@@ -1,3 +1,5 @@
+// scripts.js
+
 function calcularHorasExtra() {
     var horasExtraTrabajadas = parseFloat(document.getElementById("horasextra").value);
     const extra = 35;
