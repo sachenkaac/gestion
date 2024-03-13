@@ -47,3 +47,15 @@ function calcularSalario() {
     // Llamar a calcularHorasExtra para actualizar el salario con horas extra
     calcularHorasExtra();
 }
+function calcularTotalSalarios() {
+    var filas = document.querySelectorAll('table tr');
+    var totalSalarios = 0;
+
+    for (var i = 1; i < filas.length; i++) {
+      var salario = filas[i].querySelector('td:nth-child(4)').textContent;
+      salario = salario.replace('$', '').replace(',', '');
+      totalSalarios += parseInt(salario);
+    }
+
+    document.getElementById('totalSalarios').textContent = 'Total de Salarios: $' + totalSalarios.toLocaleString();
+  }

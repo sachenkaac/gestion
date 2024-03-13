@@ -50,3 +50,18 @@ select:focus {
     color: #0056b3; /* Azul oscuro para el texto de los resultados */
     margin-top: 20px;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
