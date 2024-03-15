@@ -12,7 +12,7 @@
     <img src="images/1.jpg" alt="Empleado" height="105px"  width="100px" onclick="window.location.href='empleado.html';">
 
     <h2>Ingresa las horas trabajadas</h2>
-    <input type="number" min="0" id="numero" placeholder="Número de horas" oninput="calcularSalario()">
+    <input type="number" min="0" max="80" id="numero" placeholder="Número de horas" oninput="calcularSalario()">
 
     <h2>Selecciona puesto</h2>
     <select id="puesto" onchange="calcularSalario()">
@@ -23,7 +23,7 @@
     </select>
 
     <h2>Ingresa las horas extras trabajadas</h2>
-    <input type="number" min="0" id="horasextra" placeholder="Número de horas" oninput="calcularHorasExtra()">
+    <input type="number" min="0" max="20" id="horasextra" placeholder="Número de horas" oninput="calcularHorasExtra()">
 
     <!-- Resultados -->
     <h2 id="resultado">Salario por día: </h2>
